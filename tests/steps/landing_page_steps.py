@@ -1,12 +1,11 @@
 from playwright.sync_api import Page, expect
 from pytest_bdd import scenarios, given, when, then
 
-scenarios("../features/ecommerce_landing_page.feature")
-
 
 @given('I access the landing page')
-def access_landing_page(page:Page):
+def login_page(page:Page):
     page.goto("/client")
+    return page
 
 @when('I view the landing page')
 def observe_landing_page(page:Page):
