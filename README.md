@@ -1,1 +1,1 @@
-This project is abandoned. 
+This project is considered as complete. 
