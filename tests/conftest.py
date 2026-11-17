@@ -8,7 +8,7 @@ load_dotenv()
 BASE_URL = os.environ["BASE_URL"]
 CLIENT_USEREMAIL = os.environ["CLIENT_USEREMAIL"]
 CLIENT_USERPASSWORD = os.environ["CLIENT_USERPASSWORD"]
-
+FORGOT_PASSWORD_URL = os.environ["FORGOT_PASSWORD_URL"]
 
 @pytest.fixture
 def client_useremail():
@@ -29,4 +29,6 @@ def logged_in_page(login_page:Page):
     login_page.locator("#userPassword").fill(CLIENT_USERPASSWORD)
     login_page.locator("#login").click()
     return login_page
+
+
 

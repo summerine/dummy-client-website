@@ -5,7 +5,7 @@ scenarios("../features/ecommerce_login_failed.feature")
 
 
 @given('I access the ecommerce landing page')
-def ecommerce_login_page(page: Page):
+def login_page(page: Page):
     page.goto("/client")
     return page
 
